@@ -50,3 +50,7 @@ if __name__ == "__main__":
         filename = 'examples/c_files/memmgr.h'
 
     funcs = show_func_decls(filename)
+    for i,f in enumerate(funcs):
+        print(i, f.coord)
+        f.show()
+        print()
